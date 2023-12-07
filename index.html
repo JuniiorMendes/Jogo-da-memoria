@@ -87,59 +87,59 @@
         function clicando1() {
             this.classList.toggle("virado")
             if(this.classList.contains('virado')) {
-                this.src = 'carta1.jpg';
+                this.src = './carta1.jpg';
             } else {
-                this.src = 'cartaVirada.jpg';
+                this.src = './cartaVirada.jpg';
             }
         }
         
         function clicando2() {
             this.classList.toggle("virado")
             if(this.classList.contains('virado')) {
-                this.src = 'carta2.jpg';
+                this.src = './carta2.jpg';
             } else {
-                this.src = 'cartaVirada.jpg';
+                this.src = './cartaVirada.jpg';
             }
         }
 
         function clicando3() {
             this.classList.toggle("virado")
             if(this.classList.contains('virado')) {
-                this.src = 'carta3.jpg';
+                this.src = './carta3.jpg';
             } else {
-                this.src = 'cartaVirada.jpg';
+                this.src = './cartaVirada.jpg';
             }
         }
 
         function clicando4() {
             this.classList.toggle("virado")
             if(this.classList.contains('virado')) {
-                this.src = 'carta4.jpg';
+                this.src = './carta4.jpg';
             } else {
-                this.src = 'cartaVirada.jpg';
+                this.src = './cartaVirada.jpg';
             }
         }
 
         function cartasViradas() {
-            imgcard1.src = "/carta1.jpg"
-            imgcard2.src = "/carta2.jpg"
-            imgcard3.src = "/carta3.jpg"
-            imgcard4.src = "/carta4.jpg"
-            imgcard5.src = "/carta1.jpg"
-            imgcard6.src = "/carta2.jpg"
-            imgcard7.src = "/carta3.jpg"
-            imgcard8.src = "/carta4.jpg"
+            imgcard1.src = "./carta1.jpg"
+            imgcard2.src = "./carta2.jpg"
+            imgcard3.src = "./carta3.jpg"
+            imgcard4.src = "./carta4.jpg"
+            imgcard5.src = "./carta1.jpg"
+            imgcard6.src = "./carta2.jpg"
+            imgcard7.src = "./carta3.jpg"
+            imgcard8.src = "./carta4.jpg"
         }
         
         function cartasDesviradas() {
-            imgcard1.src = "/cartaVirada.jpg"
-            imgcard2.src = "/cartaVirada.jpg"
-            imgcard3.src = "/cartaVirada.jpg"
-            imgcard4.src = "/cartaVirada.jpg"
-            imgcard5.src = "/cartaVirada.jpg"
-            imgcard6.src = "/cartaVirada.jpg"
-            imgcard7.src = "/cartaVirada.jpg"
-            imgcard8.src = "/cartaVirada.jpg"
+            imgcard1.src = "./cartaVirada.jpg"
+            imgcard2.src = "./cartaVirada.jpg"
+            imgcard3.src = "./cartaVirada.jpg"
+            imgcard4.src = "./cartaVirada.jpg"
+            imgcard5.src = "./cartaVirada.jpg"
+            imgcard6.src = "./cartaVirada.jpg"
+            imgcard7.src = "./cartaVirada.jpg"
+            imgcard8.src = "./cartaVirada.jpg"
         }
 
         function ini() {
@@ -166,7 +166,7 @@
         function clicando1() {
             this.classList.toggle("virado");
             if (this.classList.contains("virado")) {
-                this.src = "carta1.jpg";
+                this.src = "./carta1.jpg";
                 cartasViradasF.push(this);
                 verificarCartasIguais();
             } else {
@@ -190,11 +190,11 @@
         function clicando3() {
             this.classList.toggle("virado");
             if (this.classList.contains("virado")) {
-                this.src = "carta3.jpg";
+                this.src = "./carta3.jpg";
                 cartasViradasF.push(this);
                 verificarCartasIguais();
             } else {
-                this.src = "cartaVirada.jpg";
+                this.src = "./cartaVirada.jpg";
                 cartasViradasF.pop();
             }
         }
@@ -202,11 +202,11 @@
         function clicando4() {
             this.classList.toggle("virado");
             if (this.classList.contains("virado")) {
-                this.src = "carta4.jpg";
+                this.src = "./carta4.jpg";
                 cartasViradasF.push(this);
                 verificarCartasIguais();
             } else {
-                this.src = "cartaVirada.jpg";
+                this.src = "./cartaVirada.jpg";
                 cartasViradasF.pop();
             }
         }
@@ -225,8 +225,8 @@
                 } else {
                     // As cartas são diferentes
                     setTimeout(() => {
-                        cartasViradasF[0].src = "cartaVirada.jpg";
-                        cartasViradasF[1].src = "cartaVirada.jpg";
+                        cartasViradasF[0].src = "./cartaVirada.jpg";
+                        cartasViradasF[1].src = "./cartaVirada.jpg";
                         cartasViradasF = [];
                     }, 1000);   
                 }
